@@ -22,6 +22,6 @@ class Login(APIView):
 				"message":"Login Success",
 				"username":user.username
 				})
-			return Response({
-				"error":"Invalid Credentials"
-				},status=status.HTTP_400_BAD_REQUEST)
+		return Response({
+			"error":"Invalid Credentials"
+		},status=status.HTTP_400_BAD_REQUEST)
