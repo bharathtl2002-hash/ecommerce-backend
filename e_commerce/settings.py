@@ -131,15 +131,13 @@ MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOW_ALL_ORIGINS = True
-REST_FRAMEWORK = {
-    'DEFAULT_PAGINATION_CLASS': None
-}
 from datetime import timedelta
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
-    )
+    ),
+    'DEFAULT_PAGINATION_CLASS': None
 }
 
 SIMPLE_JWT = {
